@@ -10,6 +10,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- CSS -->
      <link rel="stylesheet" href="./style.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/cc409a0e4c.js" crossorigin="anonymous"></script>
 
 </head>
 <body class="bg-emerald-50">
@@ -17,33 +19,256 @@
     <!-- NAVBAR -->
 <nav class="flex h-28 bg-white/80 items-center justify-between backdrop-blur shadow sticky top-0 z-50 ">
 
-     <!-- NEV LEFT -->
+     <!-- nav LEFT -->
      <div class="flex gap-[10px] items-center ml-6 " >
         <div ><img class="w-[50px] h-[50px]" src="./assets/logo.png" alt=""></div>
         <div><h1 class="text-[#006747] font-extrabold text-xl">Emergency<br>Service</h1></div>
      </div>
 
-     <!-- NEV RIGHT -->
+     <!-- NAV RIGHT -->
      <div class="flex gap-[20px] mr-6">
-        <!-- nev heart -->
+        <!-- nav heart -->
         <div class="flex gap-[10px] items-center bg-green-200 px-[35.5px] py-[11px] rounded-full">
             <div><h1 class="font-bold text-[16px]">0</h1></div>
-            <div><img class="w-[30px] h-[30px]" src="./assets/heart.png" alt=""></div>
+            <div><img class="w-[25px] h-[25px]" src="./assets/heart.png" alt=""></div>
         </div>
 
-        <!-- nev coin -->
+        <!-- nav coin -->
         <div class="flex gap-[10px] items-center bg-green-200 px-[35.5px] py-[11px] rounded-full ">
             <div><h1 class="font-bold text-[16px]">100</h1></div>
-            <div><img class="w-[24px] h-[24px]" src="./assets/coin.png" alt=""></div>
+            <div><img class="w-[25px] h-[25px]" src="./assets/coin.png" alt=""></div>
         </div>
 
-        <!-- nev copy -->
+        <!-- nav copy -->
         <div class="flex gap-[10px] items-center bg-[#00A63E] px-[35.5px] py-[11px] rounded-full ">
             <div><h1 class="font-bold text-[16px] text-white">0</h1></div>
             <div><p class="font-semibold text-[16px] text-white">Copy</p></div>
         </div>
      </div>
 </nav>
+
+<!-- HERO -->
+<section class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] grid place-items-center p-7 gap-3">
+    <div><img class="w-[92px] -[92px]" src="./assets/logo-dark.png" alt=""></div>
+    <div><h1 class="font-semibold text-[40px] text-white">জরুরি সেবা ডিরেক্টরি</h1></div>
+    <div><h1 class="font-semibold text-center text-[20px] text-white">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh.</h1></div>
+</section>
+
+<!-- CARDS & HISTORY -->
+<main class="m-4 md:m-12 grid lg:grid-cols-3 gap-6">
+
+    <!-- CARDS -->
+    <section class="lg:col-span-2 grid sm:grid-cols-2 xl:grid-cols-3 gap-[30px] justify-center">
+    
+    <!-- Card 1 -->
+<div class="card bg-white rounded-2xl shadow border p-8 relative h-[360px] w-full max-w-[436px]">
+  <div class="flex justify-between items-center mb-4">
+    <img class="w-[60px] h-[60px] p-3.5 bg-[#FFE3E2] rounded-xl" src="./assets/emergency.png" alt="">
+<button class="bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
+  <i class="fa-regular fa-heart"></i>
+</button>  
+</div>
+  <div>
+    <h4 class="font-bold text-2xl">জাতীয় জরুরি সেবা</h4>
+    <p class="text-xl text-slate-500">National Emergency</p>
+  </div>
+  <div class="mt-6">
+    <p class="font-bold text-2xl">999</p>
+    <span class="inline-block px-4 py-1.5 rounded-full bg-slate-100 text-slate-600 text-base">সার্বজনীন</span>
+  </div>
+  <div class="mt-6 flex gap-2">
+    <button class="flex-1 rounded-xl border px-3 py-2 text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
+    <button class="flex-1 rounded-xl bg-[#00A63E] text-white px-3 py-2 text-sm"><i class="fa-solid fa-phone"></i> Call</button>
+  </div>
+</div>
+
+<!-- Card 2 -->
+<div class="card bg-white rounded-2xl shadow border p-8 relative h-[360px] w-full max-w-[436px]">
+    <div class="flex items-center justify-between mb-4">
+        <img class="w-[60px] h-[60px] p-3.5 bg-[#DFEFFF] rounded-xl" src="./assets/police.png" alt="">
+        <button class="bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+    </div>
+    <div>
+    <h4 class="font-bold text-2xl">পুলিশ</h4>
+    <p class="text-xl text-slate-500">Police</p>
+</div>
+<div class="mt-6">
+    <p class="font-bold text-2xl">999</p>
+    <span class="inline-block px-4 py-1.5 rounded-full bg-slate-100 text-slate-600 text-base">পুলিশ</span>
+</div>
+<div class="mt-6 flex gap-2">
+    <button class="flex-1 rounded-xl border px-3 py-2 text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
+    <button class="flex-1 rounded-xl bg-[#00A63E] text-white px-3 py-2 text-sm"><i class="fa-solid fa-phone"></i> Call</button>
+</div>
+</div>
+
+<!-- Card 3 -->
+<div class="card bg-white rounded-2xl shadow border p-8 relative h-[360px] w-full max-w-[436px]">
+    <div class="flex items-center justify-between mb-4">
+        <img class="w-[60px] h-[60px] p-3.5 bg-[#ffefe2] rounded-xl" src="./assets/fire-service.png" alt="">
+        <button class="bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
+            <i class="fa-regular fa-heart"></i>
+        </button>  </div>
+        <div>
+            <h4 class="font-bold text-2xl">ফায়ার সার্ভিস</h4>
+            <p class="text-xl text-slate-500">Fire Service</p>
+        </div>
+        <div class="mt-6">
+            <p class="font-bold text-2xl">999</p>
+            <span class="inline-block px-4 py-1.5 rounded-full bg-slate-100 text-slate-600 text-base">ফায়ার</span>
+        </div>
+        <div class="mt-6 flex gap-2">
+            <button class="flex-1 rounded-xl border px-3 py-2 text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
+            <button class="flex-1 rounded-xl bg-[#00A63E] text-white px-3 py-2 text-sm"><i class="fa-solid fa-phone"></i> Call</button>
+        </div>
+</div>
+
+<!-- Card 4 -->
+<div class="card bg-white rounded-2xl shadow border p-8 relative h-[360px] w-full max-w-[436px]">
+<div class="flex justify-between items-center mb-4">
+<img class="w-[60px] h-[60px] p-3.5 bg-[#e2e3ff] rounded-xl" src="./assets/ambulance.png" alt="">
+<button class="bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
+<i class="fa-regular fa-heart"></i>
+</button>  
+</div>
+<div>
+<h4 class="font-bold text-2xl">অ্যাম্বুলেন্স</h4>
+<p class="text-xl text-slate-500">Ambulance</p>
+</div>
+<div class="mt-6">
+<p class="font-bold text-2xl">1994-999999</p>
+<span class="inline-block px-4 py-1.5 rounded-full bg-slate-100 text-slate-600 text-base">স্বাস্থ্য</span>
+</div>
+<div class="mt-6 flex gap-2">
+<button class="flex-1 rounded-xl border px-3 py-2 text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
+<button class="flex-1 rounded-xl bg-[#00A63E] text-white px-3 py-2 text-sm"><i class="fa-solid fa-phone"></i> Call</button>
+</div>
+</div>
+
+<!-- Card 5 -->
+<div class="card bg-white rounded-2xl shadow border p-8 relative h-[360px] w-full max-w-[436px]">
+<div class="flex justify-between items-center mb-4">
+<img class="w-[60px] h-[60px] p-3.5 bg-[#e1e1e1] rounded-xl" src="./assets/women.png" alt="">
+<button class="bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
+<i class="fa-regular fa-heart"></i>
+</button>  
+</div>
+<div>
+<h4 class="font-bold text-2xl">নারী ও শিশু সহায়তা</h4>
+<p class="text-xl text-slate-500">Women & Child Helpline</p>
+</div>
+<div class="mt-6">
+<p class="font-bold text-2xl">109</p>
+<span class="inline-block px-4 py-1.5 rounded-full bg-slate-100 text-slate-600 text-base">সহায়তা</span>
+</div>
+<div class="mt-6 flex gap-2">
+<button class="flex-1 rounded-xl border px-3 py-2 text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
+<button class="flex-1 rounded-xl bg-[#00A63E] text-white px-3 py-2 text-sm"><i class="fa-solid fa-phone"></i> Call</button>
+</div>
+</div>
+
+<!-- Card 6 -->
+<div class="card bg-white rounded-2xl shadow border p-8 relative h-[360px] w-full max-w-[436px]">
+<div class="flex justify-between items-center mb-4">
+<img class="w-[60px] h-[60px] p-3.5 bg-[#e2e2ff7e] rounded-xl" src="./assets/dudok.svg" alt="">
+<button class="bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
+<i class="fa-regular fa-heart"></i>
+</button>  
+</div>
+<div>
+<h4 class="font-bold text-2xl">দুদক</h4>
+<p class="text-xl text-slate-500">Anti-Corruption</p>
+</div>
+<div class="mt-6">
+<p class="font-bold text-2xl">106</p>
+<span class="inline-block px-4 py-1.5 rounded-full bg-slate-100 text-slate-600 text-base">সরকারি</span>
+</div>
+<div class="mt-6 flex gap-2">
+<button class="flex-1 rounded-xl border px-3 py-2 text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
+<button class="flex-1 rounded-xl bg-[#00A63E] text-white px-3 py-2 text-sm"><i class="fa-solid fa-phone"></i> Call</button>
+</div>
+</div>
+
+<!-- Card 7 -->
+<div class="card bg-white rounded-2xl shadow border p-8 relative h-[360px] w-full max-w-[436px]">
+<div class="flex justify-between items-center mb-4">
+<img class="w-[60px] h-[60px] p-3.5 bg-[#e2ffe7] rounded-xl" src="./assets/electric.png" alt="">
+<button class="bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
+<i class="fa-regular fa-heart"></i>
+</button>  
+</div>
+<div>
+<h4 class="font-bold text-2xl">বিদ্যুৎ বিভ্রাট</h4>
+<p class="text-xl text-slate-500">Electricity Outage</p>
+</div>
+<div class="mt-6">
+<p class="font-bold text-2xl">16216</p>
+<span class="inline-block px-4 py-1.5 rounded-full bg-slate-100 text-slate-600 text-base">বিদ্যুৎ</span>
+</div>
+<div class="mt-6 flex gap-2">
+<button class="flex-1 rounded-xl border px-3 py-2 text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
+<button class="flex-1 rounded-xl bg-[#00A63E] text-white px-3 py-2 text-sm"><i class="fa-solid fa-phone"></i> Call</button>
+</div>
+</div>
+<!-- Card 8 -->
+<div class="card bg-white rounded-2xl shadow border p-8 relative h-[360px] w-full max-w-[436px]">
+<div class="flex justify-between items-center mb-4">
+<img class="w-[60px] h-[60px] p-3.5 bg-[#FFE3E2] rounded-xl" src="./assets/brac.png" alt="">
+<button class="bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
+<i class="fa-regular fa-heart"></i>
+</button>  
+</div>
+<div>
+<h4 class="font-bold text-2xl">ব্র্যাক</h4>
+<p class="text-xl text-slate-500">Brac</p>
+</div>
+<div class="mt-6">
+<p class="font-bold text-2xl">16445</p>
+<span class="inline-block px-4 py-1.5 rounded-full bg-slate-100 text-slate-600 text-base">এনজিও</span>
+</div>
+<div class="mt-6 flex gap-2">
+<button class="flex-1 rounded-xl border px-3 py-2 text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
+<button class="flex-1 rounded-xl bg-[#00A63E] text-white px-3 py-2 text-sm"><i class="fa-solid fa-phone"></i> Call</button>
+</div>
+</div>
+<!-- Card 9 -->
+<div class="card bg-white rounded-2xl shadow border p-8 relative h-[360px] w-full max-w-[436px]">
+<div class="flex justify-between items-center mb-4">
+<img class="w-[60px] h-[60px] p-3.5 bg-[#fef8c3] rounded-xl" src="./assets/Bangladesh-Railway.png" alt="">
+<button class="bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
+<i class="fa-regular fa-heart"></i>
+</button>  
+</div>
+<div>
+<h4 class="font-bold text-2xl">বাংলাদেশ রেলওয়ে</h4>
+<p class="text-xl text-slate-500">Bangladesh Railway</p>
+</div>
+<div class="mt-6">
+<p class="font-bold text-2xl">163</p>
+<span class="inline-block px-4 py-1.5 rounded-full bg-slate-100 text-slate-600 text-base">পরিবহন</span>
+</div>
+<div class="mt-6 flex gap-2">
+<button class="flex-1 rounded-xl border px-3 py-2 text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
+<button class="flex-1 rounded-xl bg-[#00A63E] text-white px-3 py-2 text-sm"><i class="fa-solid fa-phone"></i> Call</button>
+</div>
+</div>
+</section>
+
+<!-- history -->
+  <section class="bg-white rounded-2xl shadow border p-4 h-fit">
+      <div class="flex items-center justify-between">
+        <h3 class="font-bold flex items-center gap-2"><i class="fa-regular fa-clock"></i> Call History</h3>
+        <button class="py-3 bg-[#00A63E] text-white rounded-full text-xs font-semibold px-[36px] ">Clear</button>
+      </div>
+      <ul  class="mt-4 space-y-2">
+        <li class="text-slate-400 text-sm">No calls yet</li>
+      </ul>
+    </section>
+</main>
+
+
 
 
 </body>
