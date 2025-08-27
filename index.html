@@ -21,19 +21,19 @@
 
    <!-- nav LEFT -->
 <div class="flex gap-3 items-center">
-  <img class="w-[30px] h-[30px] md:w-[50px] md:h-[50px]" src="./assets/logo.png" alt="">
-    <div class="gap-0">
-    <h1 class="text-[#006747] font-extrabold text-base md:text-xl">Emergency</h1>
-    <h1 class="text-[#006747] font-extrabold text-base md:text-xl">Service</h1>
+  <img class="w-[30px] h-[30px] md:w-[50px] md:h-[50px] flex-shrink-0" src="./assets/logo.png" alt="">
+    <div class="gap-1.5">
+    <h1 class="text-[#006747] font-extrabold text-sm sm:text-sm md:text-xl ">Emergency</h1>
+    <h1 class="text-[#006747] font-extrabold text-sm sm:text-sm md:text-xl">Service</h1>
   </div>
 </div>
 
 
-<!-- NAV RIGHT -->
+<!-- NAV RIGHT  -->
 <div class="flex gap-2 md:gap-[20px] items-center">
     <!-- nav heart -->
     <div class="flex gap-1 md:gap-[10px] items-center bg-green-200 px-3 py-1 md:px-[35.5px] md:py-[11px] rounded-full">
-        <h1 class="font-bold text-sm md:text-[16px]" id="heartCountDisplay">0</h1>
+        <h1 class="font-bold text-sm md:text-[16px]" id="navbarHeartCountDisplay">0</h1>
         <img class="w-[18px] h-[18px] md:w-[25px] md:h-[25px]" src="./assets/heart.png" alt="">
     </div>
 
@@ -44,10 +44,11 @@
     </div>
 
     <!-- nav copy -->
-    <div class="flex gap-1 md:gap-[10px] items-center bg-[#00A63E] px-3 py-1 md:px-[35.5px] md:py-[11px] rounded-full">
-        <h1 class="font-bold text-sm md:text-[16px] text-white">0</h1>
-        <p class="font-semibold text-sm md:text-[16px] text-white">Copy</p>
-    </div>
+<div class="flex gap-1 md:gap-[10px] items-center bg-[#00A63E] px-3 py-1 md:px-[35.5px] md:py-[11px] rounded-full">
+    <h1 class="font-bold text-sm md:text-[16px] text-white" id="navbarCopyCountDisplay">0</h1>
+    <p class="font-semibold text-sm md:text-[16px] text-white">Copy</p>
+</div>
+
 </div>
 </nav>
 
@@ -70,7 +71,7 @@
 <div class="card bg-white rounded-2xl shadow border p-8 relative h-[360px] w-full max-w-[436px]">
   <div class="flex justify-between items-center mb-4">
     <img class="w-[60px] h-[60px] p-3.5 bg-[#FFE3E2] rounded-xl" src="./assets/emergency.png" alt="">
-<button class="heartBtn bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
+<button class="cardHeartBtn bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
   <i class="fa-regular fa-heart"></i>
 </button>
 </div>
@@ -79,11 +80,11 @@
     <p class="text-xl text-slate-500">National Emergency</p>
   </div>
   <div class="mt-6">
-    <p class="font-bold text-2xl">999</p>
+    <p class="font-bold text-2xl" id="number-999">999</p>
     <span class="inline-block px-4 py-1.5 rounded-full bg-slate-100 text-slate-600 text-base">সার্বজনীন</span>
   </div>
   <div class="mt-6 flex gap-2">
-    <button class="flex-1 rounded-xl border px-3 py-2 text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
+    <button class="copyBtn flex-1 rounded-xl border px-3 py-2 text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
     <button class="flex-1 rounded-xl bg-[#00A63E] text-white px-3 py-2 text-sm"><i class="fa-solid fa-phone"></i> Call</button>
   </div>
 </div>
@@ -92,7 +93,7 @@
 <div class="card bg-white rounded-2xl shadow border p-8 relative h-[360px] w-full max-w-[436px]">
     <div class="flex items-center justify-between mb-4">
         <img class="w-[60px] h-[60px] p-3.5 bg-[#DFEFFF] rounded-xl" src="./assets/police.png" alt="">
-        <button class="heartBtn bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
+        <button class="cardHeartBtn bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
             <i class="fa-regular fa-heart"></i>
         </button>
     </div>
@@ -101,11 +102,11 @@
     <p class="text-xl text-slate-500">Police</p>
 </div>
 <div class="mt-6">
-    <p class="font-bold text-2xl">999</p>
+    <p class="font-bold text-2xl" id="number-police">999</p>
     <span class="inline-block px-4 py-1.5 rounded-full bg-slate-100 text-slate-600 text-base">পুলিশ</span>
 </div>
 <div class="mt-6 flex gap-2">
-    <button class="flex-1 rounded-xl border px-3 py-2 text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
+    <button class="copyBtn flex-1 rounded-xl border px-3 py-2 text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
     <button class="flex-1 rounded-xl bg-[#00A63E] text-white px-3 py-2 text-sm"><i class="fa-solid fa-phone"></i> Call</button>
 </div>
 </div>
@@ -114,19 +115,20 @@
 <div class="card bg-white rounded-2xl shadow border p-8 relative h-[360px] w-full max-w-[436px]">
     <div class="flex items-center justify-between mb-4">
         <img class="w-[60px] h-[60px] p-3.5 bg-[#ffefe2] rounded-xl" src="./assets/fire-service.png" alt="">
-        <button class="heartBtn bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
-            <i class="fa-regular fa-heart"></i>
-        </button>  </div>
+        <button class="cardHeartBtn bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
+            <i class=" fa-regular fa-heart"></i>
+        </button>  
+      </div>
         <div>
             <h4 class="font-bold text-2xl">ফায়ার সার্ভিস</h4>
             <p class="text-xl text-slate-500">Fire Service</p>
         </div>
         <div class="mt-6">
-            <p class="font-bold text-2xl">999</p>
+            <p class="font-bold text-2xl" id="number-fire">999</p>
             <span class="inline-block px-4 py-1.5 rounded-full bg-slate-100 text-slate-600 text-base">ফায়ার</span>
         </div>
         <div class="mt-6 flex gap-2">
-            <button class="flex-1 rounded-xl border px-3 py-2 text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
+            <button class="copyBtn flex-1 rounded-xl border px-3 py-2 text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
             <button class="flex-1 rounded-xl bg-[#00A63E] text-white px-3 py-2 text-sm"><i class="fa-solid fa-phone"></i> Call</button>
         </div>
 </div>
@@ -135,7 +137,7 @@
 <div class="card bg-white rounded-2xl shadow border p-8 relative h-[360px] w-full max-w-[436px]">
 <div class="flex justify-between items-center mb-4">
 <img class="w-[60px] h-[60px] p-3.5 bg-[#e2e3ff] rounded-xl" src="./assets/ambulance.png" alt="">
-<button class="heartBtn bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
+<button class="cardHeartBtn bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
 <i class="fa-regular fa-heart"></i>
 </button>
 </div>
@@ -144,11 +146,11 @@
 <p class="text-xl text-slate-500">Ambulance</p>
 </div>
 <div class="mt-6">
-<p class="font-bold text-2xl">1994-999999</p>
+<p class="font-bold text-2xl" id="number-ambulance">1994-999999</p>
 <span class="inline-block px-4 py-1.5 rounded-full bg-slate-100 text-slate-600 text-base">স্বাস্থ্য</span>
 </div>
 <div class="mt-6 flex gap-2">
-<button class="flex-1 rounded-xl border px-3 py-2 text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
+<button class="copyBtn flex-1 rounded-xl border px-3 py-2 text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
 <button class="flex-1 rounded-xl bg-[#00A63E] text-white px-3 py-2 text-sm"><i class="fa-solid fa-phone"></i> Call</button>
 </div>
 </div>
@@ -157,7 +159,7 @@
 <div class="card bg-white rounded-2xl shadow border p-8 relative h-[360px] w-full max-w-[436px]">
 <div class="flex justify-between items-center mb-4">
 <img class="w-[60px] h-[60px] p-3.5 bg-[#e1e1e1] rounded-xl" src="./assets/women.png" alt="">
-<button class="heartBtn bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
+<button class="cardHeartBtn bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
 <i class="fa-regular fa-heart"></i>
 </button>
 </div>
@@ -166,11 +168,11 @@
 <p class="text-xl text-slate-500">Women & Child Helpline</p>
 </div>
 <div class="mt-6">
-<p class="font-bold text-2xl">109</p>
+<p class="font-bold text-2xl" id="number-women-child">109</p>
 <span class="inline-block px-4 py-1.5 rounded-full bg-slate-100 text-slate-600 text-base">সহায়তা</span>
 </div>
 <div class="mt-6 flex gap-2">
-<button class="flex-1 rounded-xl border px-3 py-2 text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
+<button class="copyBtn flex-1 rounded-xl border px-3 py-2 text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
 <button class="flex-1 rounded-xl bg-[#00A63E] text-white px-3 py-2 text-sm"><i class="fa-solid fa-phone"></i> Call</button>
 </div>
 </div>
@@ -179,7 +181,7 @@
 <div class="card bg-white rounded-2xl shadow border p-8 relative h-[360px] w-full max-w-[436px]">
 <div class="flex justify-between items-center mb-4">
 <img class="w-[60px] h-[60px] p-3.5 bg-[#e2e2ff7e] rounded-xl" src="./assets/dudok.svg" alt="">
-<button class="heartBtn bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
+<button class="cardHeartBtn bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
 <i class="fa-regular fa-heart"></i>
 </button>
 </div>
@@ -188,11 +190,11 @@
 <p class="text-xl text-slate-500">Anti-Corruption</p>
 </div>
 <div class="mt-6">
-<p class="font-bold text-2xl">106</p>
+<p class="font-bold text-2xl" id="number-dudok">106</p>
 <span class="inline-block px-4 py-1.5 rounded-full bg-slate-100 text-slate-600 text-base">সরকারি</span>
 </div>
 <div class="mt-6 flex gap-2">
-<button class="flex-1 rounded-xl border px-3 py-2 text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
+<button class="copyBtn flex-1 rounded-xl border px-3 py-2 text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
 <button class="flex-1 rounded-xl bg-[#00A63E] text-white px-3 py-2 text-sm"><i class="fa-solid fa-phone"></i> Call</button>
 </div>
 </div>
@@ -201,7 +203,7 @@
 <div class="card bg-white rounded-2xl shadow border p-8 relative h-[360px] w-full max-w-[436px]">
 <div class="flex justify-between items-center mb-4">
 <img class="w-[60px] h-[60px] p-3.5 bg-[#e2ffe7] rounded-xl" src="./assets/electric.png" alt="">
-<button class="heartBtn bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
+<button class="cardHeartBtn bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
 <i class="fa-regular fa-heart"></i>
 </button>
 </div>
@@ -210,11 +212,11 @@
 <p class="text-xl text-slate-500">Electricity Outage</p>
 </div>
 <div class="mt-6">
-<p class="font-bold text-2xl">16216</p>
+<p class="font-bold text-2xl" id="number-electricity">16216</p>
 <span class="inline-block px-4 py-1.5 rounded-full bg-slate-100 text-slate-600 text-base">বিদ্যুৎ</span>
 </div>
 <div class="mt-6 flex gap-2">
-<button class="flex-1 rounded-xl border px-3 py-2 text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
+<button class="copyBtn flex-1 rounded-xl border px-3 py-2 text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
 <button class="flex-1 rounded-xl bg-[#00A63E] text-white px-3 py-2 text-sm"><i class="fa-solid fa-phone"></i> Call</button>
 </div>
 </div>
@@ -222,7 +224,7 @@
 <div class="card bg-white rounded-2xl shadow border p-8 relative h-[360px] w-full max-w-[436px]">
 <div class="flex justify-between items-center mb-4">
 <img class="w-[60px] h-[60px] p-3.5 bg-[#FFE3E2] rounded-xl" src="./assets/brac.png" alt="">
-<button class="heartBtn bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
+<button class="cardHeartBtn bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
 <i class="fa-regular fa-heart"></i>
 </button>
 </div>
@@ -231,11 +233,11 @@
 <p class="text-xl text-slate-500">Brac</p>
 </div>
 <div class="mt-6">
-<p class="font-bold text-2xl">16445</p>
+<p class="font-bold text-2xl" id="number-brac">16445</p>
 <span class="inline-block px-4 py-1.5 rounded-full bg-slate-100 text-slate-600 text-base">এনজিও</span>
 </div>
 <div class="mt-6 flex gap-2">
-<button class="flex-1 rounded-xl border px-3 py-2 text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
+<button class="copyBtn flex-1 rounded-xl border px-3 py-2 text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
 <button class="flex-1 rounded-xl bg-[#00A63E] text-white px-3 py-2 text-sm"><i class="fa-solid fa-phone"></i> Call</button>
 </div>
 </div>
@@ -243,7 +245,7 @@
 <div class="card bg-white rounded-2xl shadow border p-8 relative h-[360px] w-full max-w-[436px]">
 <div class="flex justify-between items-center mb-4">
 <img class="w-[60px] h-[60px] p-3.5 bg-[#fef8c3] rounded-xl" src="./assets/Bangladesh-Railway.png" alt="">
-<button class="heartBtn bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
+<button class="cardHeartBtn bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
 <i class="fa-regular fa-heart"></i>
 </button>
 </div>
@@ -252,11 +254,11 @@
 <p class="text-xl text-slate-500">Bangladesh Railway</p>
 </div>
 <div class="mt-6">
-<p class="font-bold text-2xl">163</p>
+<p class="font-bold text-2xl" id="number-railway">163</p>
 <span class="inline-block px-4 py-1.5 rounded-full bg-slate-100 text-slate-600 text-base">পরিবহন</span>
 </div>
 <div class="mt-6 flex gap-2">
-<button class="flex-1 rounded-xl border px-3 py-2 text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
+<button class="copyBtn flex-1 rounded-xl border px-3 py-2 text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
 <button class="flex-1 rounded-xl bg-[#00A63E] text-white px-3 py-2 text-sm"><i class="fa-solid fa-phone"></i> Call</button>
 </div>
 </div>
@@ -276,11 +278,14 @@
 
 <script>
   let hearts = 0;
+  let copies = 0;
 
-  const heartCountDisplay = document.getElementById("heartCountDisplay");
+  const navbarHeartCountDisplay = document.getElementById("navbarHeartCountDisplay");
+  const navbarCopyCountDisplay = document.getElementById("navbarCopyCountDisplay"); 
 
-  function updateNavbar() {
-    heartCountDisplay.textContent = hearts;
+  function updateNavbarCounts() {
+    navbarHeartCountDisplay.textContent = hearts;
+    navbarCopyCountDisplay.textContent = copies;
   }
 
   function toggleHeart(event) {
@@ -293,19 +298,29 @@
     } else {
       heartIcon.classList.remove('fa-solid');
       heartIcon.classList.add('fa-regular'); 
-      hearts--; 
     }
-    updateNavbar();
+    updateNavbarCounts();
   }
 
-  // Add event listeners to all heart buttons
-  document.querySelectorAll(".card .heartBtn").forEach(button => {
+  function handleCopy(event) {
+    const card = event.currentTarget.closest('.card');
+    const number = card.querySelector("p.font-bold").textContent; 
+    navigator.clipboard.writeText(number); 
+    copies++;
+    updateNavbarCounts();
+  }
+
+  document.querySelectorAll(".cardHeartBtn").forEach(button => {
     button.addEventListener("click", toggleHeart);
   });
 
-  updateNavbar();
+  document.querySelectorAll(".copyBtn").forEach(button => {
+    button.addEventListener("click", handleCopy);
+  });
 
+  updateNavbarCounts();
 </script>
+
 
 </body>
 </html>
