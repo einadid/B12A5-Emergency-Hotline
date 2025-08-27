@@ -16,42 +16,49 @@
 </head>
 <body class="bg-emerald-50">
 
-    <!-- NAVBAR -->
-<nav class="flex h-28 bg-white/80 items-center justify-between backdrop-blur shadow sticky top-0 z-50 ">
+<!-- NAVBAR -->
+<nav class="flex flex-col md:flex-row h-auto md:h-28 bg-white/80 items-center justify-between backdrop-blur shadow sticky top-0 z-50 p-4 md:p-0">
+    
+   <!-- nav LEFT -->
+<div class="flex gap-2 md:gap-[10px] items-center md:ml-6 mb-4 md:mb-0">
+  <div>
+    <img class="w-[50px] h-[50px]" src="./assets/logo.png" alt="">
+  </div>
+  <div class="flex flex-row md:flex-col justify-items-start gap-2 md:gap-0">
+    <h1 class="text-[#006747] font-extrabold text-xl">Emergency</h1>
+    <h1 class="text-[#006747] font-extrabold text-xl">Service</h1>
+  </div>
+</div>
 
-     <!-- nav LEFT -->
-     <div class="flex gap-[10px] items-center ml-6 " >
-        <div ><img class="w-[50px] h-[50px]" src="./assets/logo.png" alt=""></div>
-        <div><h1 class="text-[#006747] font-extrabold text-xl">Emergency<br>Service</h1></div>
-     </div>
 
-     <!-- NAV RIGHT -->
-     <div class="flex gap-[20px] mr-6">
+    <!-- NAV RIGHT -->
+    <div class="flex flex-wrap justify-center gap-2 md:gap-[20px] md:mr-6">
         <!-- nav heart -->
-        <div class="flex gap-[10px] items-center bg-green-200 px-[35.5px] py-[11px] rounded-full">
-            <div><h1 class="font-bold text-[16px]">0</h1></div>
-            <div><img class="w-[25px] h-[25px]" src="./assets/heart.png" alt=""></div>
+        <div class="flex gap-2 md:gap-[10px] items-center bg-green-200 px-4 py-2 md:px-[35.5px] md:py-[11px] rounded-full">
+            <h1 class="font-bold text-base md:text-[16px]">0</h1>
+            <img class="w-[20px] h-[20px] md:w-[25px] md:h-[25px]" src="./assets/heart.png" alt="">
         </div>
 
         <!-- nav coin -->
-        <div class="flex gap-[10px] items-center bg-green-200 px-[35.5px] py-[11px] rounded-full ">
-            <div><h1 class="font-bold text-[16px]">100</h1></div>
-            <div><img class="w-[25px] h-[25px]" src="./assets/coin.png" alt=""></div>
+        <div class="flex gap-2 md:gap-[10px] items-center bg-green-200 px-4 py-2 md:px-[35.5px] md:py-[11px] rounded-full">
+            <h1 class="font-bold text-base md:text-[16px]">100</h1>
+            <img class="w-[20px] h-[20px] md:w-[25px] md:h-[25px]" src="./assets/coin.png" alt="">
         </div>
 
         <!-- nav copy -->
-        <div class="flex gap-[10px] items-center bg-[#00A63E] px-[35.5px] py-[11px] rounded-full ">
-            <div><h1 class="font-bold text-[16px] text-white">0</h1></div>
-            <div><p class="font-semibold text-[16px] text-white">Copy</p></div>
+        <div class="flex gap-2 md:gap-[10px] items-center bg-[#00A63E] px-4 py-2 md:px-[35.5px] md:py-[11px] rounded-full">
+            <h1 class="font-bold text-base md:text-[16px] text-white">0</h1>
+            <p class="font-semibold text-base md:text-[16px] text-white">Copy</p>
         </div>
-     </div>
+    </div>
 </nav>
 
+
 <!-- HERO -->
-<section class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] grid place-items-center p-7 gap-3">
-    <div><img class="w-[92px] -[92px]" src="./assets/logo-dark.png" alt=""></div>
-    <div><h1 class="font-semibold text-[40px] text-white">জরুরি সেবা ডিরেক্টরি</h1></div>
-    <div><h1 class="font-semibold text-center text-[20px] text-white">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh.</h1></div>
+<section class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] grid place-items-center p-7 gap-3 text-center">
+    <div><img class="w-[70px] h-[70px] md:w-[92px] md:h-[92px]" src="./assets/logo-dark.png" alt=""></div>
+    <div><h1 class="font-semibold text-3xl md:text-[40px] text-white">জরুরি সেবা ডিরেক্টরি</h1></div>
+    <div><h1 class="font-semibold text-base md:text-[20px] text-white">Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh.</h1></div>
 </section>
 
 <!-- CARDS & HISTORY -->
