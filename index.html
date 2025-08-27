@@ -17,40 +17,41 @@
 <body class="bg-emerald-50">
 
 <!-- NAVBAR -->
-<nav class="flex flex-col md:flex-row h-auto md:h-28 bg-white/80 items-center justify-between backdrop-blur shadow sticky top-0 z-50 p-4 md:p-0">
+<nav class="flex flex-row h-16 bg-white/80 items-center justify-between backdrop-blur shadow sticky top-0 z-50 px-4 md:px-12">
     
    <!-- nav LEFT -->
-<div class="flex gap-2 md:gap-[10px] items-center md:ml-6 mb-4 md:mb-0">
-  <div>
-    <img class="w-[50px] h-[50px]" src="./assets/logo.png" alt="">
-  </div>
-  <div class="flex flex-row md:flex-col justify-items-start gap-2 md:gap-0">
-    <h1 class="text-[#006747] font-extrabold text-xl">Emergency</h1>
-    <h1 class="text-[#006747] font-extrabold text-xl">Service</h1>
+<div class="flex gap-3 items-center">
+  <img class="w-[30px] h-[30px] md:w-[50px] md:h-[50px]" src="./assets/logo.png" alt="">
+    <div class="gap-0">
+    <h1 class="text-[#006747] font-extrabold text-base md:text-xl">Emergency</h1>
+    <h1 class="text-[#006747] font-extrabold text-base md:text-xl">Service</h1>
   </div>
 </div>
 
-    <!-- NAV RIGHT -->
-    <div class="flex flex-wrap justify-center gap-2 md:gap-[20px] md:mr-6">
-        <!-- nav heart -->
-        <div class="flex gap-2 md:gap-[10px] items-center bg-green-200 px-4 py-2 md:px-[35.5px] md:py-[11px] rounded-full">
-            <h1 class="font-bold text-base md:text-[16px]">0</h1>
-            <img class="w-[20px] h-[20px] md:w-[25px] md:h-[25px]" src="./assets/heart.png" alt="">
-        </div>
 
-        <!-- nav coin -->
-        <div class="flex gap-2 md:gap-[10px] items-center bg-green-200 px-4 py-2 md:px-[35.5px] md:py-[11px] rounded-full">
-            <h1 class="font-bold text-base md:text-[16px]">100</h1>
-            <img class="w-[20px] h-[20px] md:w-[25px] md:h-[25px]" src="./assets/coin.png" alt="">
-        </div>
-
-        <!-- nav copy -->
-        <div class="flex gap-2 md:gap-[10px] items-center bg-[#00A63E] px-4 py-2 md:px-[35.5px] md:py-[11px] rounded-full">
-            <h1 class="font-bold text-base md:text-[16px] text-white">0</h1>
-            <p class="font-semibold text-base md:text-[16px] text-white">Copy</p>
-        </div>
+<!-- NAV RIGHT -->
+<div class="flex gap-2 md:gap-[20px] items-center">
+    <!-- nav heart -->
+    <div class="flex gap-1 md:gap-[10px] items-center bg-green-200 px-3 py-1 md:px-[35.5px] md:py-[11px] rounded-full">
+        <h1 class="font-bold text-sm md:text-[16px]">0</h1>
+        <img class="w-[18px] h-[18px] md:w-[25px] md:h-[25px]" src="./assets/heart.png" alt="">
     </div>
+
+    <!-- nav coin -->
+    <div class="flex gap-1 md:gap-[10px] items-center bg-green-200 px-3 py-1 md:px-[35.5px] md:py-[11px] rounded-full">
+        <h1 class="font-bold text-sm md:text-[16px]">100</h1>
+        <img class="w-[18px] h-[18px] md:w-[25px] md:h-[25px]" src="./assets/coin.png" alt="">
+    </div>
+
+    <!-- nav copy -->
+    <div class="flex gap-1 md:gap-[10px] items-center bg-[#00A63E] px-3 py-1 md:px-[35.5px] md:py-[11px] rounded-full">
+        <h1 class="font-bold text-sm md:text-[16px] text-white">0</h1>
+        <p class="font-semibold text-sm md:text-[16px] text-white">Copy</p>
+    </div>
+</div>
 </nav>
+
+
 
 
 <!-- HERO -->
@@ -61,8 +62,7 @@
 </section>
 
 <!-- CARDS & HISTORY -->
-<main class="m-4 md:m-12 grid lg:grid-cols-3 gap-6">
-
+<main class="mx-4 my-4 md:mx-12 md:my-12 grid lg:grid-cols-3 gap-6">
     <!-- CARDS -->
     <section class="lg:col-span-2 grid sm:grid-cols-2 xl:grid-cols-3 gap-[30px] justify-center">
     
@@ -263,7 +263,7 @@
 </section>
 
 <!-- history -->
-  <section class="bg-white rounded-2xl shadow border p-4 h-fit">
+  <section class="bg-white rounded-2xl shadow border p-4 h-fit m-0 md:m-0">
       <div class="flex items-center justify-between">
         <h3 class="font-bold flex items-center gap-2"><i class="fa-regular fa-clock"></i> Call History</h3>
         <button class="py-3 bg-[#00A63E] text-white rounded-full text-xs font-semibold px-[36px] ">Clear</button>
@@ -273,6 +273,8 @@
       </ul>
     </section>
 </main>
+
+<script></script>
 
 
 
