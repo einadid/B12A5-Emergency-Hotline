@@ -18,7 +18,7 @@
 
 <!-- NAVBAR -->
 <nav class="flex flex-row h-16 bg-white/80 items-center justify-between backdrop-blur shadow sticky top-0 z-50 px-4 md:px-12">
-    
+
    <!-- nav LEFT -->
 <div class="flex gap-3 items-center">
   <img class="w-[30px] h-[30px] md:w-[50px] md:h-[50px]" src="./assets/logo.png" alt="">
@@ -33,7 +33,7 @@
 <div class="flex gap-2 md:gap-[20px] items-center">
     <!-- nav heart -->
     <div class="flex gap-1 md:gap-[10px] items-center bg-green-200 px-3 py-1 md:px-[35.5px] md:py-[11px] rounded-full">
-        <h1 class="font-bold text-sm md:text-[16px]">0</h1>
+        <h1 class="font-bold text-sm md:text-[16px]" id="heartCountDisplay">0</h1>
         <img class="w-[18px] h-[18px] md:w-[25px] md:h-[25px]" src="./assets/heart.png" alt="">
     </div>
 
@@ -65,14 +65,14 @@
 <main class="mx-4 my-4 md:mx-12 md:my-12 grid lg:grid-cols-3 gap-6">
     <!-- CARDS -->
     <section class="lg:col-span-2 grid sm:grid-cols-2 xl:grid-cols-3 gap-[30px] justify-center">
-    
+
     <!-- Card 1 -->
 <div class="card bg-white rounded-2xl shadow border p-8 relative h-[360px] w-full max-w-[436px]">
   <div class="flex justify-between items-center mb-4">
     <img class="w-[60px] h-[60px] p-3.5 bg-[#FFE3E2] rounded-xl" src="./assets/emergency.png" alt="">
-<button class="bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
+<button class="heartBtn bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
   <i class="fa-regular fa-heart"></i>
-</button>  
+</button>
 </div>
   <div>
     <h4 class="font-bold text-2xl">জাতীয় জরুরি সেবা</h4>
@@ -92,7 +92,7 @@
 <div class="card bg-white rounded-2xl shadow border p-8 relative h-[360px] w-full max-w-[436px]">
     <div class="flex items-center justify-between mb-4">
         <img class="w-[60px] h-[60px] p-3.5 bg-[#DFEFFF] rounded-xl" src="./assets/police.png" alt="">
-        <button class="bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
+        <button class="heartBtn bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
             <i class="fa-regular fa-heart"></i>
         </button>
     </div>
@@ -114,7 +114,7 @@
 <div class="card bg-white rounded-2xl shadow border p-8 relative h-[360px] w-full max-w-[436px]">
     <div class="flex items-center justify-between mb-4">
         <img class="w-[60px] h-[60px] p-3.5 bg-[#ffefe2] rounded-xl" src="./assets/fire-service.png" alt="">
-        <button class="bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
+        <button class="heartBtn bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
             <i class="fa-regular fa-heart"></i>
         </button>  </div>
         <div>
@@ -135,9 +135,9 @@
 <div class="card bg-white rounded-2xl shadow border p-8 relative h-[360px] w-full max-w-[436px]">
 <div class="flex justify-between items-center mb-4">
 <img class="w-[60px] h-[60px] p-3.5 bg-[#e2e3ff] rounded-xl" src="./assets/ambulance.png" alt="">
-<button class="bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
+<button class="heartBtn bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
 <i class="fa-regular fa-heart"></i>
-</button>  
+</button>
 </div>
 <div>
 <h4 class="font-bold text-2xl">অ্যাম্বুলেন্স</h4>
@@ -157,9 +157,9 @@
 <div class="card bg-white rounded-2xl shadow border p-8 relative h-[360px] w-full max-w-[436px]">
 <div class="flex justify-between items-center mb-4">
 <img class="w-[60px] h-[60px] p-3.5 bg-[#e1e1e1] rounded-xl" src="./assets/women.png" alt="">
-<button class="bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
+<button class="heartBtn bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
 <i class="fa-regular fa-heart"></i>
-</button>  
+</button>
 </div>
 <div>
 <h4 class="font-bold text-2xl">নারী ও শিশু সহায়তা</h4>
@@ -179,9 +179,9 @@
 <div class="card bg-white rounded-2xl shadow border p-8 relative h-[360px] w-full max-w-[436px]">
 <div class="flex justify-between items-center mb-4">
 <img class="w-[60px] h-[60px] p-3.5 bg-[#e2e2ff7e] rounded-xl" src="./assets/dudok.svg" alt="">
-<button class="bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
+<button class="heartBtn bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
 <i class="fa-regular fa-heart"></i>
-</button>  
+</button>
 </div>
 <div>
 <h4 class="font-bold text-2xl">দুদক</h4>
@@ -201,9 +201,9 @@
 <div class="card bg-white rounded-2xl shadow border p-8 relative h-[360px] w-full max-w-[436px]">
 <div class="flex justify-between items-center mb-4">
 <img class="w-[60px] h-[60px] p-3.5 bg-[#e2ffe7] rounded-xl" src="./assets/electric.png" alt="">
-<button class="bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
+<button class="heartBtn bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
 <i class="fa-regular fa-heart"></i>
-</button>  
+</button>
 </div>
 <div>
 <h4 class="font-bold text-2xl">বিদ্যুৎ বিভ্রাট</h4>
@@ -222,9 +222,9 @@
 <div class="card bg-white rounded-2xl shadow border p-8 relative h-[360px] w-full max-w-[436px]">
 <div class="flex justify-between items-center mb-4">
 <img class="w-[60px] h-[60px] p-3.5 bg-[#FFE3E2] rounded-xl" src="./assets/brac.png" alt="">
-<button class="bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
+<button class="heartBtn bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
 <i class="fa-regular fa-heart"></i>
-</button>  
+</button>
 </div>
 <div>
 <h4 class="font-bold text-2xl">ব্র্যাক</h4>
@@ -243,9 +243,9 @@
 <div class="card bg-white rounded-2xl shadow border p-8 relative h-[360px] w-full max-w-[436px]">
 <div class="flex justify-between items-center mb-4">
 <img class="w-[60px] h-[60px] p-3.5 bg-[#fef8c3] rounded-xl" src="./assets/Bangladesh-Railway.png" alt="">
-<button class="bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
+<button class="heartBtn bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
 <i class="fa-regular fa-heart"></i>
-</button>  
+</button>
 </div>
 <div>
 <h4 class="font-bold text-2xl">বাংলাদেশ রেলওয়ে</h4>
@@ -274,10 +274,38 @@
     </section>
 </main>
 
-<script></script>
+<script>
+  let hearts = 0;
 
+  const heartCountDisplay = document.getElementById("heartCountDisplay");
 
+  function updateNavbar() {
+    heartCountDisplay.textContent = hearts;
+  }
 
+  function toggleHeart(event) {
+    const heartIcon = event.currentTarget.querySelector('.fa-heart');
+
+    if (heartIcon.classList.contains('fa-regular')) {
+      heartIcon.classList.remove('fa-regular');
+      heartIcon.classList.add('fa-solid'); 
+      hearts++; 
+    } else {
+      heartIcon.classList.remove('fa-solid');
+      heartIcon.classList.add('fa-regular'); 
+      hearts--; 
+    }
+    updateNavbar();
+  }
+
+  // Add event listeners to all heart buttons
+  document.querySelectorAll(".card .heartBtn").forEach(button => {
+    button.addEventListener("click", toggleHeart);
+  });
+
+  updateNavbar();
+
+</script>
 
 </body>
 </html>

@@ -1,1 +1,5 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
+.fa-heart.fa-solid { 
+    color: rgba(255, 0, 0, 0.856);
+}
