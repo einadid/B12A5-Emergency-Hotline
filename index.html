@@ -37,11 +37,11 @@
         <img class="w-[18px] h-[18px] md:w-[25px] md:h-[25px]" src="./assets/heart.png" alt="">
     </div>
 
-    <!-- nav coin -->
-    <div class="flex gap-1 md:gap-[10px] items-center bg-green-200 px-3 py-1 md:px-[35.5px] md:py-[11px] rounded-full">
-        <h1 class="font-bold text-sm md:text-[16px]">100</h1>
-        <img class="w-[18px] h-[18px] md:w-[25px] md:h-[25px]" src="./assets/coin.png" alt="">
-    </div>
+<!-- nav coin -->
+<div class="flex gap-1 md:gap-[10px] items-center bg-green-200 px-3 py-1 md:px-[35.5px] md:py-[11px] rounded-full">
+    <h1 class="font-bold text-sm md:text-[16px]" id="navbarCoinCountDisplay">100</h1>
+    <img class="w-[18px] h-[18px] md:w-[25px] md:h-[25px]" src="./assets/coin.png" alt="">
+</div>
 
     <!-- nav copy -->
 <div class="flex gap-1 md:gap-[10px] items-center bg-[#00A63E] px-3 py-1 md:px-[35.5px] md:py-[11px] rounded-full">
@@ -73,7 +73,7 @@
     <img class="w-[60px] h-[60px] p-3.5 bg-[#FFE3E2] rounded-xl" src="./assets/emergency.png" alt="">
 <button class="cardHeartBtn bg-gray-50 w-10 h-10 flex items-center justify-center rounded-full">
   <i class="fa-regular fa-heart"></i>
-</button>
+</button> 
 </div>
   <div>
     <h4 class="font-bold text-2xl" data-service-name="জাতীয় জরুরি সেবা">জাতীয় জরুরি সেবা</h4>
@@ -275,113 +275,9 @@
     </section>
 </main>
 
-<script>
-  let hearts = 0;
-  let copies = 0;
-  let callHistory = [];
+<script src="./script.js"></script>
 
-  const navbarHeartCountDisplay = document.getElementById("navbarHeartCountDisplay");
-  const navbarCopyCountDisplay = document.getElementById("navbarCopyCountDisplay");
-  const historyList = document.getElementById('historyList'); 
-  const clearHistoryButton = document.getElementById('clearHistory');
 
-  function updateNavbarCounts() {
-    navbarHeartCountDisplay.textContent = hearts;
-    navbarCopyCountDisplay.textContent = copies;
-  }
-
-  function toggleHeart(event) {
-    const heartIcon = event.currentTarget.querySelector('.fa-heart');
-
-    if (heartIcon.classList.contains('fa-regular')) {
-      heartIcon.classList.remove('fa-regular');
-      heartIcon.classList.add('fa-solid');
-      hearts++;
-    } else {
-      heartIcon.classList.remove('fa-solid');
-      heartIcon.classList.add('fa-regular');
-      // hearts--; 
-    }
-    updateNavbarCounts();
-  }
-
-  function handleCopy(event) {
-    const card = event.currentTarget.closest('.card');
-    const number = card.querySelector("p[data-phone-number]").dataset.phoneNumber;
-    navigator.clipboard.writeText(number);
-    copies++;
-    updateNavbarCounts();
-  }
-
-  function renderCallHistory() {
-    historyList.innerHTML = ''; 
-
-    if (callHistory.length === 0) {
-      const noCallsItem = document.createElement('li');
-      noCallsItem.className = 'text-slate-400 text-sm';
-      noCallsItem.textContent = 'No calls yet';
-      historyList.appendChild(noCallsItem);
-    } else {
-      const sortedHistory = [...callHistory].reverse();
-      sortedHistory.forEach(call => {
-        const listItem = document.createElement('li');
-        listItem.className = 'bg-gray-50 p-3 rounded-xl shadow-sm flex items-center justify-between';
-        listItem.innerHTML = `
-          <div>
-            <p class="font-semibold text-sm">${call.name}</p>
-            <p class="text-xs text-gray-500">${call.number}</p>
-          </div>
-          <span class="text-xs text-gray-500">${call.time}</span>
-        `;
-        historyList.appendChild(listItem);
-      });
-    }
-  }
-
-  function handleCall(event) {
-    const card = event.currentTarget.closest('.card');
-    const serviceName = card.querySelector("h4[data-service-name]").dataset.serviceName; 
-    const phoneNumber = card.querySelector("p[data-phone-number]").dataset.phoneNumber; 
-
-    const now = new Date();
-    const timeString = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true });
-
-    const newCall = {
-      name: serviceName,
-      number: phoneNumber,
-      time: timeString
-    };
-
-    callHistory.push(newCall);
-    renderCallHistory(); 
-    alert(`Calling ${serviceName}: ${phoneNumber}`);
-  }
-
-  function clearCallHistory() {
-    callHistory = []; 
-    renderCallHistory(); 
-  }
-
-  document.querySelectorAll(".cardHeartBtn").forEach(button => {
-    button.addEventListener("click", toggleHeart);
-  });
-
-  document.querySelectorAll(".copyBtn").forEach(button => {
-    button.addEventListener("click", handleCopy);
-  });
-
-  document.querySelectorAll(".callBtn").forEach(button => {
-    button.addEventListener("click", handleCall);
-  });
-
-  clearHistoryButton.addEventListener('click', clearCallHistory);
-
-  document.addEventListener('DOMContentLoaded', () => {
-    renderCallHistory();
-    updateNavbarCounts(); 
-  });
-
-</script>
 
 
 </body>
