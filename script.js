@@ -33,9 +33,14 @@ function toggleHeart(event) {
 function handleCopy(event) {
   const card = event.currentTarget.closest('.card');
   const number = card.querySelector("p[data-phone-number]").dataset.phoneNumber;
+  const serviceName = card.querySelector("h4[data-service-name]").dataset.serviceName;
+
   navigator.clipboard.writeText(number);
+
   copies++;
   updateNavbarCounts();
+
+  alert(`Copied ${serviceName}: ${number}`);
 }
 
 function renderCallHistory() {
